@@ -48,7 +48,7 @@ func (c *ExplorerController) Start() {
 
 func (c *ExplorerController) reload() {
 	c.View.RenderFiles(c.Mod.CurrentPath, c.Mod.Files)
-	c.View.ShowPreview("[gray]Use ↑↓ para navegar, 'e' para entrar, 'u' para voltar, 'q' para sair")
+	c.View.ShowPreview("[yellow]Use ↑↓ para navegar, 'e' para entrar, 'u' para voltar, 'q' para sair, 'd' para deletar, 'n' para criar")
 }
 
 func (c *ExplorerController) enter() {
