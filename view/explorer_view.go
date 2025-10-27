@@ -44,7 +44,8 @@ func (v *ExplorerView) RenderFiles(path string, files []model.FileItem) {
 }
 
 func (v *ExplorerView) ShowPreview(content string) {
-	v.Preview.SetText(content)
+	v.Preview.SetText(content).
+	SetDynamicColors(true)
 }
 
 func (v *ExplorerView) Root() tview.Primitive {
